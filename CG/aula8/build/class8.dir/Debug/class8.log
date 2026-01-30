@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\Utilizador\Desktop\3ano2sem\CG\aula8\main.cpp(91,23): warning C4838: a conversão de 'double' em 'float' requer uma conversão de restrição
+C:\Users\Utilizador\Desktop\3ano2sem\CG\aula8\main.cpp(91,37): warning C4838: a conversão de 'double' em 'float' requer uma conversão de restrição
+C:\Users\Utilizador\Desktop\3ano2sem\CG\aula8\main.cpp(105,23): warning C4838: a conversão de 'double' em 'float' requer uma conversão de restrição
+  class8.vcxproj -> C:\Users\Utilizador\Desktop\3ano2sem\CG\aula8\build\Debug\class8.exe

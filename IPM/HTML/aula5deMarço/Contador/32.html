@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>contador!</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src ="https://unpkg.com/vue@latest" defer></script>
+    <script src="32.js" defer></script>
+
+</head>
+<body>
+    <div id="app">
+        <h1>Contador</h1>
+        <p id="mostrador" v-if="contador>=0"> O valor do contador é {{ contador }} </p>
+        <p id="mostrador" v-else> O valor do contador é negativo </p>
+        <button v-on:click="incrementa">Incrementar</button>
+        <button v-on:click="decrementa">Decrementar</button>
+    </div>
+</body>

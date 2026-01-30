@@ -1,0 +1,73 @@
+/* Este documento apresenta uma solução em construção. É fornecido como 
+   material de estudo. Recomenda-se que o revejam e melhorem conforme 
+   forem adquirindo novos conhecimentos. */
+   
+/* Traffic lights v.2025 */
+
+:root {
+    --vermelho: #ff0000;
+    --laranja: #ffae00;
+    --verde: #00ff00;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+}
+
+.lampada {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    background-color: #646464;
+    border-style: solid ;
+    border-width: 1px;
+    margin-top: 0.1rem;
+    box-shadow: inset 4px 2px 0.5em 0.1em rgba(0, 0, 0, 0.5), 4px 2px 0.5em 0.1em rgba(0, 0, 0, 0.5);
+}
+
+.vermelhoon {
+    background-color: var(--vermelho);
+}
+.amareloon {
+    background-color: var(--laranja);
+}
+.verdeon {
+    background-color: var(--verde);
+}
+
+#botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    margin-top: 1em;
+}
+
+button {
+    width: 10rem;
+    padding: 10px;
+    border: solid 1px black;
+    margin: 1px;
+    font-size: 1.5rem;
+    cursor: pointer;   
+}
+button:hover {
+    border: solid 2px black;
+    margin: 0;
+}
+
+#auto {
+    font-size: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    min-height: 1rem;
+}
+
+.autoon {
+    background-color: darkred;  
+    color: white;
+}

@@ -1,0 +1,13 @@
+O programa otp.py utiliza um gerador de números aleatórios criptograficamente seguro para gerar a chave,
+garantindo que cada chave seja única e imprevisível. Já bad_otp.py substitui esse gerador seguro por um gerador
+inseguro, bad_prng(n),que inicializa o estado do gerador pseudoaleatório com apenas 2 bytes de entropia.
+Isso significa que a chave gerada pode assumir apenas 65.536 variações possíveis, tornando-a previsível e
+vulnerável a ataques de força bruta.
+Uma das principais consequências dessa substituição é que bad_otp.py pode gerar a mesma chave mais de uma vez,
+violando um dos princípios fundamentais do One-Time Pad (OTP), que exige que cada chave seja única para
+garantir segurança perfeita. Além disso, um atacante que intercete mensagens cifradas pode simplesmente testar
+todas as combinações possíveis da chave até encontrar a correta, tornando o sistema completamente inseguro.
+Enquanto otp.py fornece segurança real ao garantir que a chave seja verdadeiramente aleatória e imprevisível,
+bad_otp.py transforma o algoritmo em algo vulnerável e ineficaz contra ataques. Dessa forma, bad_otp.py
+ilustra na prática como a escolha de um gerador de números aleatórios inadequado pode comprometer totalmente
+a segurança de um sistema criptográfico.

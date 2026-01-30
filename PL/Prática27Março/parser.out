@@ -1,0 +1,177 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> tudo
+Rule 1     tudo -> tudo encomenda
+Rule 2     tudo -> encomenda
+Rule 3     encomenda -> Type DP lista_alimentos
+Rule 4     lista_alimentos -> lista_alimentos alimento
+Rule 5     lista_alimentos -> alimento
+Rule 6     alimento -> INDICE QP NAME QP PRICE QP QUANTITY PG
+
+Terminals, with rules where they appear
+
+DP                   : 3
+INDICE               : 6
+NAME                 : 6
+PG                   : 6
+PRICE                : 6
+QP                   : 6 6 6
+QUANTITY             : 6
+Type                 : 3
+error                : 
+
+Nonterminals, with rules where they appear
+
+alimento             : 4 5
+encomenda            : 1 2
+lista_alimentos      : 3 4
+tudo                 : 1 0
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . tudo
+    (1) tudo -> . tudo encomenda
+    (2) tudo -> . encomenda
+    (3) encomenda -> . Type DP lista_alimentos
+
+    Type            shift and go to state 3
+
+    tudo                           shift and go to state 1
+    encomenda                      shift and go to state 2
+
+state 1
+
+    (0) S' -> tudo .
+    (1) tudo -> tudo . encomenda
+    (3) encomenda -> . Type DP lista_alimentos
+
+    Type            shift and go to state 3
+
+    encomenda                      shift and go to state 4
+
+state 2
+
+    (2) tudo -> encomenda .
+
+    Type            reduce using rule 2 (tudo -> encomenda .)
+    $end            reduce using rule 2 (tudo -> encomenda .)
+
+
+state 3
+
+    (3) encomenda -> Type . DP lista_alimentos
+
+    DP              shift and go to state 5
+
+
+state 4
+
+    (1) tudo -> tudo encomenda .
+
+    Type            reduce using rule 1 (tudo -> tudo encomenda .)
+    $end            reduce using rule 1 (tudo -> tudo encomenda .)
+
+
+state 5
+
+    (3) encomenda -> Type DP . lista_alimentos
+    (4) lista_alimentos -> . lista_alimentos alimento
+    (5) lista_alimentos -> . alimento
+    (6) alimento -> . INDICE QP NAME QP PRICE QP QUANTITY PG
+
+    INDICE          shift and go to state 8
+
+    lista_alimentos                shift and go to state 6
+    alimento                       shift and go to state 7
+
+state 6
+
+    (3) encomenda -> Type DP lista_alimentos .
+    (4) lista_alimentos -> lista_alimentos . alimento
+    (6) alimento -> . INDICE QP NAME QP PRICE QP QUANTITY PG
+
+    Type            reduce using rule 3 (encomenda -> Type DP lista_alimentos .)
+    $end            reduce using rule 3 (encomenda -> Type DP lista_alimentos .)
+    INDICE          shift and go to state 8
+
+    alimento                       shift and go to state 9
+
+state 7
+
+    (5) lista_alimentos -> alimento .
+
+    INDICE          reduce using rule 5 (lista_alimentos -> alimento .)
+    Type            reduce using rule 5 (lista_alimentos -> alimento .)
+    $end            reduce using rule 5 (lista_alimentos -> alimento .)
+
+
+state 8
+
+    (6) alimento -> INDICE . QP NAME QP PRICE QP QUANTITY PG
+
+    QP              shift and go to state 10
+
+
+state 9
+
+    (4) lista_alimentos -> lista_alimentos alimento .
+
+    INDICE          reduce using rule 4 (lista_alimentos -> lista_alimentos alimento .)
+    Type            reduce using rule 4 (lista_alimentos -> lista_alimentos alimento .)
+    $end            reduce using rule 4 (lista_alimentos -> lista_alimentos alimento .)
+
+
+state 10
+
+    (6) alimento -> INDICE QP . NAME QP PRICE QP QUANTITY PG
+
+    NAME            shift and go to state 11
+
+
+state 11
+
+    (6) alimento -> INDICE QP NAME . QP PRICE QP QUANTITY PG
+
+    QP              shift and go to state 12
+
+
+state 12
+
+    (6) alimento -> INDICE QP NAME QP . PRICE QP QUANTITY PG
+
+    PRICE           shift and go to state 13
+
+
+state 13
+
+    (6) alimento -> INDICE QP NAME QP PRICE . QP QUANTITY PG
+
+    QP              shift and go to state 14
+
+
+state 14
+
+    (6) alimento -> INDICE QP NAME QP PRICE QP . QUANTITY PG
+
+    QUANTITY        shift and go to state 15
+
+
+state 15
+
+    (6) alimento -> INDICE QP NAME QP PRICE QP QUANTITY . PG
+
+    PG              shift and go to state 16
+
+
+state 16
+
+    (6) alimento -> INDICE QP NAME QP PRICE QP QUANTITY PG .
+
+    INDICE          reduce using rule 6 (alimento -> INDICE QP NAME QP PRICE QP QUANTITY PG .)
+    Type            reduce using rule 6 (alimento -> INDICE QP NAME QP PRICE QP QUANTITY PG .)
+    $end            reduce using rule 6 (alimento -> INDICE QP NAME QP PRICE QP QUANTITY PG .)
+

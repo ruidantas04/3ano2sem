@@ -1,0 +1,2231 @@
+{
+  "directors": [
+    {
+      "id": "1",
+      "name": "José",
+      "email": "jose@di.uminho.pt",
+      "password": "123"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "1",
+      "name": "Pedro",
+      "email": "pedro@di.uminho.pt",
+      "password": "123"
+    },
+    {
+      "id": "2",
+      "name": "Ana",
+      "email": "ana@di.uminho.pt",
+      "password": "123"
+    },
+    {
+      "id": "3",
+      "name": "Luís",
+      "email": "luis@di.uminho.pt",
+      "password": "123"
+    },
+    {
+      "id": "4",
+      "name": "Maria",
+      "email": "maria@di.uminho.pt",
+      "password": "123"
+    },
+    {
+      "id": "5",
+      "name": "João",
+      "email": "joao@di.uminho.pt",
+      "password": "123"
+    }
+  ],
+  "students": [
+    {
+      "id": "1",
+      "name": "Mafalda",
+      "email": "a32324@alunos.uminho.pt",
+      "password": "123",
+      "specialStatus": true,
+      "enrolled": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Carlos",
+      "email": "33232@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Joana",
+      "email": "j32324@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Ricardo",
+      "email": "r32324@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Sofia",
+      "email": "s32324@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Tiago",
+      "email": "t32324@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Inês",
+      "email": "i32324@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Gonçalo",
+      "email": "g32324@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Mariana",
+      "email": "m32324@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Diogo",
+      "email": "d32324@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Beatriz",
+      "email": "b32324@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Fábio",
+      "email": "f32324@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Ana",
+      "email": "a32325@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Bruno",
+      "email": "b32325@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "15",
+      "name": "Catarina",
+      "email": "c32325@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "16",
+      "name": "Daniel",
+      "email": "d32325@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "id": "17",
+      "name": "Eva",
+      "email": "e32325@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "18",
+      "name": "Filipe",
+      "email": "f32325@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "id": "19",
+      "name": "Gabriela",
+      "email": "g32325@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "20",
+      "name": "Hugo",
+      "email": "h32325@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "21",
+      "name": "Isabel",
+      "email": "i32325@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "22",
+      "name": "Jorge",
+      "email": "j32325@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "id": "23",
+      "name": "Leonor",
+      "email": "l32325@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "24",
+      "name": "Miguel",
+      "email": "m32325@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "id": "25",
+      "name": "Nuno",
+      "email": "n32325@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "26",
+      "name": "Olívia",
+      "email": "o32325@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "27",
+      "name": "Pedro",
+      "email": "p32325@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "28",
+      "name": "Rita",
+      "email": "r32325@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "id": "29",
+      "name": "Sara",
+      "email": "s32325@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "30",
+      "name": "Tiago",
+      "email": "t32325@alunos.uminho.pt",
+      "password": "123",
+      "enrolled": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    }
+  ],
+  "degrees": [
+    {
+      "id": "1",
+      "name": "Licenciatura em Engenharia Informática",
+      "abbreviation": "LEI",
+      "directorId": 1
+    }
+  ],
+  "courses": [
+    {
+      "id": "1",
+      "name": "Matemática",
+      "abbreviation": "MAT",
+      "year": 1,
+      "semester": 1,
+      "degreeId": 1
+    },
+    {
+      "id": "2",
+      "name": "Fundamentos de Programação",
+      "abbreviation": "FP",
+      "year": 1,
+      "semester": 1,
+      "degreeId": 1
+    },
+    {
+      "id": "3",
+      "name": "Introdução à Computação",
+      "abbreviation": "IC",
+      "year": 1,
+      "semester": 1,
+      "degreeId": 1
+    },
+    {
+      "id": "4",
+      "name": "Álgebra Linear",
+      "abbreviation": "AL",
+      "year": 1,
+      "semester": 1,
+      "degreeId": 1
+    },
+    {
+      "id": "5",
+      "name": "Lógica para Computação",
+      "abbreviation": "LC",
+      "year": 1,
+      "semester": 1,
+      "degreeId": 1
+    },
+    {
+      "id": "6",
+      "name": "Cálculo",
+      "abbreviation": "CAL",
+      "year": 1,
+      "semester": 2,
+      "degreeId": 1
+    },
+    {
+      "id": "7",
+      "name": "Programação Orientada a Objetos",
+      "abbreviation": "POO",
+      "year": 1,
+      "semester": 2,
+      "degreeId": 1
+    },
+    {
+      "id": "8",
+      "name": "Estruturas de Dados",
+      "abbreviation": "ED",
+      "year": 1,
+      "semester": 2,
+      "degreeId": 1
+    },
+    {
+      "id": "9",
+      "name": "Arquitetura de Computadores",
+      "abbreviation": "AC",
+      "year": 1,
+      "semester": 2,
+      "degreeId": 1
+    },
+    {
+      "id": "10",
+      "name": "Sistemas Operativos",
+      "abbreviation": "SO",
+      "year": 1,
+      "semester": 2,
+      "degreeId": 1
+    },
+    {
+      "id": "11",
+      "name": "Bases de Dados",
+      "abbreviation": "BD",
+      "year": 2,
+      "semester": 1,
+      "degreeId": 1
+    },
+    {
+      "id": "12",
+      "name": "Redes de Computadores",
+      "abbreviation": "RC",
+      "year": 2,
+      "semester": 1,
+      "degreeId": 1
+    },
+    {
+      "id": "13",
+      "name": "Engenharia de Software",
+      "abbreviation": "ES",
+      "year": 2,
+      "semester": 1,
+      "degreeId": 1
+    },
+    {
+      "id": "14",
+      "name": "Inteligência Artificial",
+      "abbreviation": "IA",
+      "year": 2,
+      "semester": 1,
+      "degreeId": 1
+    },
+    {
+      "id": "15",
+      "name": "Sistemas Distribuídos",
+      "abbreviation": "SD",
+      "year": 2,
+      "semester": 1,
+      "degreeId": 1
+    },
+    {
+      "id": "16",
+      "name": "Compiladores",
+      "abbreviation": "COMP",
+      "year": 2,
+      "semester": 2,
+      "degreeId": 1
+    },
+    {
+      "id": "17",
+      "name": "Segurança Informática",
+      "abbreviation": "SI",
+      "year": 2,
+      "semester": 2,
+      "degreeId": 1
+    },
+    {
+      "id": "18",
+      "name": "Interação Humano-Computador",
+      "abbreviation": "IHC",
+      "year": 2,
+      "semester": 2,
+      "degreeId": 1
+    },
+    {
+      "id": "19",
+      "name": "Grafos e Algoritmos",
+      "abbreviation": "GA",
+      "year": 2,
+      "semester": 2,
+      "degreeId": 1
+    },
+    {
+      "id": "20",
+      "name": "Processamento de Linguagens",
+      "abbreviation": "PL",
+      "year": 2,
+      "semester": 2,
+      "degreeId": 1
+    },
+    {
+      "id": "21",
+      "name": "Aprendizagem de Máquina",
+      "abbreviation": "AM",
+      "year": 3,
+      "semester": 1,
+      "degreeId": 1
+    },
+    {
+      "id": "22",
+      "name": "Sistemas de Informação",
+      "abbreviation": "SI",
+      "year": 3,
+      "semester": 1,
+      "degreeId": 1
+    },
+    {
+      "id": "23",
+      "name": "Computação Gráfica",
+      "abbreviation": "CG",
+      "year": 3,
+      "semester": 1,
+      "degreeId": 1
+    },
+    {
+      "id": "24",
+      "name": "Redes de Nova Geração",
+      "abbreviation": "RNG",
+      "year": 3,
+      "semester": 1,
+      "degreeId": 1
+    },
+    {
+      "id": "25",
+      "name": "Sistemas Embarcados",
+      "abbreviation": "SE",
+      "year": 3,
+      "semester": 1,
+      "degreeId": 1
+    },
+    {
+      "id": "26",
+      "name": "Projeto de Engenharia Informática",
+      "abbreviation": "PEI",
+      "year": 3,
+      "semester": 2,
+      "degreeId": 1
+    },
+    {
+      "id": "27",
+      "name": "Tópicos Avançados em Computação",
+      "abbreviation": "TAC",
+      "year": 3,
+      "semester": 2,
+      "degreeId": 1
+    },
+    {
+      "id": "28",
+      "name": "Gestão de Projetos de Software",
+      "abbreviation": "GPS",
+      "year": 3,
+      "semester": 2,
+      "degreeId": 1
+    },
+    {
+      "id": "29",
+      "name": "Computação Móvel",
+      "abbreviation": "CM",
+      "year": 3,
+      "semester": 2,
+      "degreeId": 1
+    },
+    {
+      "id": "30",
+      "name": "Sistemas de Tempo Real",
+      "abbreviation": "STR",
+      "year": 3,
+      "semester": 2,
+      "degreeId": 1
+    }
+  ],
+  "shifts": [
+    {
+      "id": "1",
+      "courseId": 1,
+      "classroomId": 1,
+      "day": "Monday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 1,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "2",
+      "courseId": 1,
+      "classroomId": 1,
+      "day": "Tuesday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 1,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "3",
+      "courseId": 2,
+      "classroomId": 1,
+      "day": "Wednesday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 2,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "4",
+      "courseId": 2,
+      "classroomId": 1,
+      "day": "Thursday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 2,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "5",
+      "courseId": 3,
+      "classroomId": 1,
+      "day": "Friday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 3,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "6",
+      "courseId": 3,
+      "classroomId": 1,
+      "day": "Monday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 3,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "7",
+      "courseId": 4,
+      "classroomId": 1,
+      "day": "Tuesday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 4,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "8",
+      "courseId": 4,
+      "classroomId": 1,
+      "day": "Wednesday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 4,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "9",
+      "courseId": 5,
+      "classroomId": 1,
+      "day": "Thursday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 5,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "10",
+      "courseId": 5,
+      "classroomId": 1,
+      "day": "Friday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 5,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "11",
+      "courseId": 6,
+      "classroomId": 1,
+      "day": "Monday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 1,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "12",
+      "courseId": 6,
+      "classroomId": 1,
+      "day": "Tuesday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 1,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "13",
+      "courseId": 7,
+      "classroomId": 1,
+      "day": "Wednesday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 2,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "14",
+      "courseId": 7,
+      "classroomId": 1,
+      "day": "Thursday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 2,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "15",
+      "courseId": 8,
+      "classroomId": 1,
+      "day": "Friday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 3,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "16",
+      "courseId": 8,
+      "classroomId": 1,
+      "day": "Monday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 3,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "17",
+      "courseId": 9,
+      "classroomId": 1,
+      "day": "Tuesday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 4,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "18",
+      "courseId": 9,
+      "classroomId": 1,
+      "day": "Wednesday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 4,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "19",
+      "courseId": 10,
+      "classroomId": 1,
+      "day": "Thursday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 5,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "20",
+      "courseId": 10,
+      "classroomId": 1,
+      "day": "Friday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 5,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "21",
+      "courseId": 11,
+      "classroomId": 1,
+      "day": "Monday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 1,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "22",
+      "courseId": 11,
+      "classroomId": 1,
+      "day": "Tuesday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 1,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "23",
+      "courseId": 12,
+      "classroomId": 1,
+      "day": "Wednesday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 2,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "24",
+      "courseId": 12,
+      "classroomId": 1,
+      "day": "Thursday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 2,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "25",
+      "courseId": 13,
+      "classroomId": 1,
+      "day": "Friday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 3,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "26",
+      "courseId": 13,
+      "classroomId": 1,
+      "day": "Monday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 3,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "27",
+      "courseId": 14,
+      "classroomId": 1,
+      "day": "Tuesday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 4,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "28",
+      "courseId": 14,
+      "classroomId": 1,
+      "day": "Wednesday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 4,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "29",
+      "courseId": 15,
+      "classroomId": 1,
+      "day": "Thursday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 5,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "30",
+      "courseId": 15,
+      "classroomId": 1,
+      "day": "Friday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 5,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "31",
+      "courseId": 16,
+      "classroomId": 1,
+      "day": "Monday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 1,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "32",
+      "courseId": 16,
+      "classroomId": 1,
+      "day": "Tuesday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 1,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "33",
+      "courseId": 17,
+      "classroomId": 1,
+      "day": "Wednesday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 2,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "34",
+      "courseId": 17,
+      "classroomId": 1,
+      "day": "Thursday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 2,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "35",
+      "courseId": 18,
+      "classroomId": 1,
+      "day": "Friday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 3,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "36",
+      "courseId": 18,
+      "classroomId": 1,
+      "day": "Monday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 3,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "37",
+      "courseId": 19,
+      "classroomId": 1,
+      "day": "Tuesday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 4,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "38",
+      "courseId": 19,
+      "classroomId": 1,
+      "day": "Wednesday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 4,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "39",
+      "courseId": 20,
+      "classroomId": 1,
+      "day": "Thursday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 5,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "40",
+      "courseId": 20,
+      "classroomId": 1,
+      "day": "Friday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 5,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "41",
+      "courseId": 21,
+      "classroomId": 1,
+      "day": "Monday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 1,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "42",
+      "courseId": 21,
+      "classroomId": 1,
+      "day": "Tuesday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 1,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "43",
+      "courseId": 22,
+      "classroomId": 1,
+      "day": "Wednesday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 2,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "44",
+      "courseId": 22,
+      "classroomId": 1,
+      "day": "Thursday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 2,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "45",
+      "courseId": 23,
+      "classroomId": 1,
+      "day": "Friday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 3,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "46",
+      "courseId": 23,
+      "classroomId": 1,
+      "day": "Monday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 3,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "47",
+      "courseId": 24,
+      "classroomId": 1,
+      "day": "Tuesday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 4,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "48",
+      "courseId": 24,
+      "classroomId": 1,
+      "day": "Wednesday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 4,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "49",
+      "courseId": 25,
+      "classroomId": 1,
+      "day": "Thursday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 5,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "50",
+      "courseId": 25,
+      "classroomId": 1,
+      "day": "Friday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 5,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "51",
+      "courseId": 26,
+      "classroomId": 1,
+      "day": "Monday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 1,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "52",
+      "courseId": 26,
+      "classroomId": 1,
+      "day": "Tuesday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 1,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "53",
+      "courseId": 27,
+      "classroomId": 1,
+      "day": "Wednesday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 2,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "54",
+      "courseId": 27,
+      "classroomId": 1,
+      "day": "Thursday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 2,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "55",
+      "courseId": 28,
+      "classroomId": 1,
+      "day": "Friday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 3,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "56",
+      "courseId": 28,
+      "classroomId": 1,
+      "day": "Monday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 3,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "57",
+      "courseId": 29,
+      "classroomId": 1,
+      "day": "Tuesday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 4,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "58",
+      "courseId": 29,
+      "classroomId": 1,
+      "day": "Wednesday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 4,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "59",
+      "courseId": 30,
+      "classroomId": 1,
+      "day": "Thursday",
+      "from": 10,
+      "to": 12,
+      "type": "T",
+      "name": "T1",
+      "teacherId": 5,
+      "totalStudentsRegistered": 10
+    },
+    {
+      "id": "60",
+      "courseId": 30,
+      "classroomId": 1,
+      "day": "Friday",
+      "from": 14,
+      "to": 16,
+      "type": "PL",
+      "name": "PL1",
+      "teacherId": 5,
+      "totalStudentsRegistered": 10
+    }
+  ],
+  "allocations": [
+    {
+      "id": "1",
+      "shiftId": 1,
+      "studentId": 1
+    },
+    {
+      "id": "2",
+      "shiftId": 2,
+      "studentId": 1
+    },
+    {
+      "id": "3",
+      "shiftId": 3,
+      "studentId": 1
+    },
+    {
+      "id": "4",
+      "shiftId": 4,
+      "studentId": 1
+    },
+    {
+      "id": "5",
+      "shiftId": 5,
+      "studentId": 1
+    },
+    {
+      "id": "6",
+      "shiftId": 6,
+      "studentId": 2
+    },
+    {
+      "id": "7",
+      "shiftId": 7,
+      "studentId": 2
+    },
+    {
+      "id": "8",
+      "shiftId": 8,
+      "studentId": 2
+    },
+    {
+      "id": "9",
+      "shiftId": 9,
+      "studentId": 2
+    },
+    {
+      "id": "10",
+      "shiftId": 10,
+      "studentId": 2
+    },
+    {
+      "id": "11",
+      "shiftId": 11,
+      "studentId": 3
+    },
+    {
+      "id": "12",
+      "shiftId": 12,
+      "studentId": 3
+    },
+    {
+      "id": "13",
+      "shiftId": 13,
+      "studentId": 3
+    },
+    {
+      "id": "14",
+      "shiftId": 14,
+      "studentId": 3
+    },
+    {
+      "id": "15",
+      "shiftId": 15,
+      "studentId": 3
+    },
+    {
+      "id": "16",
+      "shiftId": 16,
+      "studentId": 4
+    },
+    {
+      "id": "17",
+      "shiftId": 17,
+      "studentId": 4
+    },
+    {
+      "id": "18",
+      "shiftId": 18,
+      "studentId": 4
+    },
+    {
+      "id": "19",
+      "shiftId": 19,
+      "studentId": 4
+    },
+    {
+      "id": "20",
+      "shiftId": 20,
+      "studentId": 4
+    },
+    {
+      "id": "21",
+      "shiftId": 21,
+      "studentId": 5
+    },
+    {
+      "id": "22",
+      "shiftId": 22,
+      "studentId": 5
+    },
+    {
+      "id": "23",
+      "shiftId": 23,
+      "studentId": 5
+    },
+    {
+      "id": "24",
+      "shiftId": 24,
+      "studentId": 5
+    },
+    {
+      "id": "25",
+      "shiftId": 25,
+      "studentId": 5
+    },
+    {
+      "id": "26",
+      "shiftId": 26,
+      "studentId": 6
+    },
+    {
+      "id": "27",
+      "shiftId": 27,
+      "studentId": 6
+    },
+    {
+      "id": "28",
+      "shiftId": 28,
+      "studentId": 6
+    },
+    {
+      "id": "29",
+      "shiftId": 29,
+      "studentId": 6
+    },
+    {
+      "id": "30",
+      "shiftId": 30,
+      "studentId": 6
+    },
+    {
+      "id": "31",
+      "shiftId": 31,
+      "studentId": 7
+    },
+    {
+      "id": "32",
+      "shiftId": 32,
+      "studentId": 7
+    },
+    {
+      "id": "33",
+      "shiftId": 33,
+      "studentId": 7
+    },
+    {
+      "id": "34",
+      "shiftId": 34,
+      "studentId": 7
+    },
+    {
+      "id": "35",
+      "shiftId": 35,
+      "studentId": 7
+    },
+    {
+      "id": "36",
+      "shiftId": 36,
+      "studentId": 8
+    },
+    {
+      "id": "37",
+      "shiftId": 37,
+      "studentId": 8
+    },
+    {
+      "id": "38",
+      "shiftId": 38,
+      "studentId": 8
+    },
+    {
+      "id": "39",
+      "shiftId": 39,
+      "studentId": 8
+    },
+    {
+      "id": "40",
+      "shiftId": 40,
+      "studentId": 8
+    },
+    {
+      "id": "41",
+      "shiftId": 41,
+      "studentId": 9
+    },
+    {
+      "id": "42",
+      "shiftId": 42,
+      "studentId": 9
+    },
+    {
+      "id": "43",
+      "shiftId": 43,
+      "studentId": 9
+    },
+    {
+      "id": "44",
+      "shiftId": 44,
+      "studentId": 9
+    },
+    {
+      "id": "45",
+      "shiftId": 45,
+      "studentId": 9
+    },
+    {
+      "id": "46",
+      "shiftId": 46,
+      "studentId": 10
+    },
+    {
+      "id": "47",
+      "shiftId": 47,
+      "studentId": 10
+    },
+    {
+      "id": "48",
+      "shiftId": 48,
+      "studentId": 10
+    },
+    {
+      "id": "49",
+      "shiftId": 49,
+      "studentId": 10
+    },
+    {
+      "id": "50",
+      "shiftId": 50,
+      "studentId": 10
+    },
+    {
+      "id": "51",
+      "shiftId": 51,
+      "studentId": 11
+    },
+    {
+      "id": "52",
+      "shiftId": 52,
+      "studentId": 11
+    },
+    {
+      "id": "53",
+      "shiftId": 53,
+      "studentId": 11
+    },
+    {
+      "id": "54",
+      "shiftId": 54,
+      "studentId": 11
+    },
+    {
+      "id": "55",
+      "shiftId": 55,
+      "studentId": 11
+    },
+    {
+      "id": "56",
+      "shiftId": 56,
+      "studentId": 12
+    },
+    {
+      "id": "57",
+      "shiftId": 57,
+      "studentId": 12
+    },
+    {
+      "id": "58",
+      "shiftId": 58,
+      "studentId": 12
+    },
+    {
+      "id": "59",
+      "shiftId": 59,
+      "studentId": 12
+    },
+    {
+      "id": "60",
+      "shiftId": 60,
+      "studentId": 12
+    },
+    {
+      "id": "61",
+      "shiftId": 1,
+      "studentId": 13
+    },
+    {
+      "id": "62",
+      "shiftId": 2,
+      "studentId": 13
+    },
+    {
+      "id": "63",
+      "shiftId": 3,
+      "studentId": 13
+    },
+    {
+      "id": "64",
+      "shiftId": 4,
+      "studentId": 13
+    },
+    {
+      "id": "65",
+      "shiftId": 5,
+      "studentId": 13
+    },
+    {
+      "id": "66",
+      "shiftId": 6,
+      "studentId": 14
+    },
+    {
+      "id": "67",
+      "shiftId": 7,
+      "studentId": 14
+    },
+    {
+      "id": "68",
+      "shiftId": 8,
+      "studentId": 14
+    },
+    {
+      "id": "69",
+      "shiftId": 9,
+      "studentId": 14
+    },
+    {
+      "id": "70",
+      "shiftId": 10,
+      "studentId": 14
+    },
+    {
+      "id": "71",
+      "shiftId": 11,
+      "studentId": 15
+    },
+    {
+      "id": "72",
+      "shiftId": 12,
+      "studentId": 15
+    },
+    {
+      "id": "73",
+      "shiftId": 13,
+      "studentId": 15
+    },
+    {
+      "id": "74",
+      "shiftId": 14,
+      "studentId": 15
+    },
+    {
+      "id": "75",
+      "shiftId": 15,
+      "studentId": 15
+    },
+    {
+      "id": "76",
+      "shiftId": 16,
+      "studentId": 16
+    },
+    {
+      "id": "77",
+      "shiftId": 17,
+      "studentId": 16
+    },
+    {
+      "id": "78",
+      "shiftId": 18,
+      "studentId": 16
+    },
+    {
+      "id": "79",
+      "shiftId": 19,
+      "studentId": 16
+    },
+    {
+      "id": "80",
+      "shiftId": 20,
+      "studentId": 16
+    },
+    {
+      "id": "81",
+      "shiftId": 21,
+      "studentId": 17
+    },
+    {
+      "id": "82",
+      "shiftId": 22,
+      "studentId": 17
+    },
+    {
+      "id": "83",
+      "shiftId": 23,
+      "studentId": 17
+    },
+    {
+      "id": "84",
+      "shiftId": 24,
+      "studentId": 17
+    },
+    {
+      "id": "85",
+      "shiftId": 25,
+      "studentId": 17
+    },
+    {
+      "id": "86",
+      "shiftId": 26,
+      "studentId": 18
+    },
+    {
+      "id": "87",
+      "shiftId": 27,
+      "studentId": 18
+    },
+    {
+      "id": "88",
+      "shiftId": 28,
+      "studentId": 18
+    },
+    {
+      "id": "89",
+      "shiftId": 29,
+      "studentId": 18
+    },
+    {
+      "id": "90",
+      "shiftId": 30,
+      "studentId": 18
+    },
+    {
+      "id": "91",
+      "shiftId": 31,
+      "studentId": 19
+    },
+    {
+      "id": "92",
+      "shiftId": 32,
+      "studentId": 19
+    },
+    {
+      "id": "93",
+      "shiftId": 33,
+      "studentId": 19
+    },
+    {
+      "id": "94",
+      "shiftId": 34,
+      "studentId": 19
+    },
+    {
+      "id": "95",
+      "shiftId": 35,
+      "studentId": 19
+    },
+    {
+      "id": "96",
+      "shiftId": 36,
+      "studentId": 20
+    },
+    {
+      "id": "97",
+      "shiftId": 37,
+      "studentId": 20
+    },
+    {
+      "id": "98",
+      "shiftId": 38,
+      "studentId": 20
+    },
+    {
+      "id": "99",
+      "shiftId": 39,
+      "studentId": 20
+    },
+    {
+      "id": "100",
+      "shiftId": 40,
+      "studentId": 20
+    },
+    {
+      "id": "101",
+      "shiftId": 41,
+      "studentId": 21
+    },
+    {
+      "id": "102",
+      "shiftId": 42,
+      "studentId": 21
+    },
+    {
+      "id": "103",
+      "shiftId": 43,
+      "studentId": 21
+    },
+    {
+      "id": "104",
+      "shiftId": 44,
+      "studentId": 21
+    },
+    {
+      "id": "105",
+      "shiftId": 45,
+      "studentId": 21
+    },
+    {
+      "id": "106",
+      "shiftId": 46,
+      "studentId": 22
+    },
+    {
+      "id": "107",
+      "shiftId": 47,
+      "studentId": 22
+    },
+    {
+      "id": "108",
+      "shiftId": 48,
+      "studentId": 22
+    },
+    {
+      "id": "109",
+      "shiftId": 49,
+      "studentId": 22
+    },
+    {
+      "id": "110",
+      "shiftId": 50,
+      "studentId": 22
+    },
+    {
+      "id": "111",
+      "shiftId": 51,
+      "studentId": 23
+    },
+    {
+      "id": "112",
+      "shiftId": 52,
+      "studentId": 23
+    },
+    {
+      "id": "113",
+      "shiftId": 53,
+      "studentId": 23
+    },
+    {
+      "id": "114",
+      "shiftId": 54,
+      "studentId": 23
+    },
+    {
+      "id": "115",
+      "shiftId": 55,
+      "studentId": 23
+    },
+    {
+      "id": "116",
+      "shiftId": 56,
+      "studentId": 24
+    },
+    {
+      "id": "117",
+      "shiftId": 57,
+      "studentId": 24
+    },
+    {
+      "id": "118",
+      "shiftId": 58,
+      "studentId": 24
+    },
+    {
+      "id": "119",
+      "shiftId": 59,
+      "studentId": 24
+    },
+    {
+      "id": "120",
+      "shiftId": 60,
+      "studentId": 24
+    },
+    {
+      "id": "121",
+      "shiftId": 1,
+      "studentId": 25
+    },
+    {
+      "id": "122",
+      "shiftId": 2,
+      "studentId": 25
+    },
+    {
+      "id": "123",
+      "shiftId": 3,
+      "studentId": 25
+    },
+    {
+      "id": "124",
+      "shiftId": 4,
+      "studentId": 25
+    },
+    {
+      "id": "125",
+      "shiftId": 5,
+      "studentId": 25
+    },
+    {
+      "id": "126",
+      "shiftId": 6,
+      "studentId": 26
+    },
+    {
+      "id": "127",
+      "shiftId": 7,
+      "studentId": 26
+    },
+    {
+      "id": "128",
+      "shiftId": 8,
+      "studentId": 26
+    },
+    {
+      "id": "129",
+      "shiftId": 9,
+      "studentId": 26
+    },
+    {
+      "id": "130",
+      "shiftId": 10,
+      "studentId": 26
+    },
+    {
+      "id": "131",
+      "shiftId": 11,
+      "studentId": 27
+    },
+    {
+      "id": "132",
+      "shiftId": 12,
+      "studentId": 27
+    },
+    {
+      "id": "133",
+      "shiftId": 13,
+      "studentId": 27
+    },
+    {
+      "id": "134",
+      "shiftId": 14,
+      "studentId": 27
+    },
+    {
+      "id": "135",
+      "shiftId": 15,
+      "studentId": 27
+    },
+    {
+      "id": "136",
+      "shiftId": 16,
+      "studentId": 28
+    },
+    {
+      "id": "137",
+      "shiftId": 17,
+      "studentId": 28
+    },
+    {
+      "id": "138",
+      "shiftId": 18,
+      "studentId": 28
+    },
+    {
+      "id": "139",
+      "shiftId": 19,
+      "studentId": 28
+    },
+    {
+      "id": "140",
+      "shiftId": 20,
+      "studentId": 28
+    },
+    {
+      "id": "141",
+      "shiftId": 21,
+      "studentId": 29
+    },
+    {
+      "id": "142",
+      "shiftId": 22,
+      "studentId": 29
+    },
+    {
+      "id": "143",
+      "shiftId": 23,
+      "studentId": 29
+    },
+    {
+      "id": "144",
+      "shiftId": 24,
+      "studentId": 29
+    },
+    {
+      "id": "145",
+      "shiftId": 25,
+      "studentId": 29
+    },
+    {
+      "id": "146",
+      "shiftId": 26,
+      "studentId": 30
+    },
+    {
+      "id": "147",
+      "shiftId": 27,
+      "studentId": 30
+    },
+    {
+      "id": "148",
+      "shiftId": 28,
+      "studentId": 30
+    },
+    {
+      "id": "149",
+      "shiftId": 29,
+      "studentId": 30
+    },
+    {
+      "id": "150",
+      "shiftId": 30,
+      "studentId": 30
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "1",
+      "studentId": 1,
+      "courseIDs": [
+        1,
+        11
+      ]
+    },
+    {
+      "id": "2",
+      "studentId": 2,
+      "courseIDs": [
+        6,
+        16
+      ]
+    },
+    {
+      "id": "3",
+      "studentId": 3,
+      "courseIDs": [
+        11,
+        21
+      ]
+    },
+    {
+      "id": "4",
+      "studentId": 4,
+      "courseIDs": [
+        16,
+        26
+      ]
+    }
+  ],
+  "buildings": [
+    {
+      "id": "1",
+      "name": "Edificio 1",
+      "abbreviation": "E1"
+    }
+  ],
+  "classrooms": [
+    {
+      "id": "1",
+      "name": "1.01",
+      "capacity": 50,
+      "buildingId": 1
+    }
+  ],
+  "classroomRequests": [
+    {
+      "id": "1",
+      "classroomId": 1,
+      "teacherId": 1,
+      "response": "ok",
+      "responseSeenByTeacher": false
+    }
+  ],
+  "shiftRequests": [
+    {
+      "id": 1,
+      "shiftId": 2,            
+      "fromShiftId": 1,          
+      "studentId": 1,            
+      "reason": "Tenho outra UC nesse horário.",
+      "data": "2025-04-17",
+      "response": "pending",
+      "responseSeenByStudent": false
+    }
+  
+    
+  ]
+}

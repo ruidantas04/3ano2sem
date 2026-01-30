@@ -1,0 +1,193 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > Turma</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">&lt;empty package name&gt;</a>
+</div>
+
+<h1>Coverage Summary for Class: Turma (&lt;empty package name&gt;)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Turma</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    45,5%
+  </span>
+  <span class="absValue">
+    (5/11)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    22,2%
+  </span>
+  <span class="absValue">
+    (4/18)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    43,3%
+  </span>
+  <span class="absValue">
+    (13/30)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;import java.util.ArrayList;
+&nbsp;import java.util.Iterator;
+&nbsp;import java.util.List;
+&nbsp;import java.util.stream.Collectors;
+&nbsp;
+&nbsp;public class Turma {
+&nbsp;
+&nbsp;    private List&lt;Aluno&gt; alunos;
+&nbsp;
+<b class="fc">&nbsp;    public Turma(){</b>
+<b class="fc">&nbsp;        alunos = new ArrayList&lt;&gt;();</b>
+&nbsp;    }
+&nbsp;
+<b class="nc">&nbsp;    public Turma(List&lt;Aluno&gt; novosAlunos){</b>
+<b class="nc">&nbsp;        this.setAlunos(novosAlunos);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public Turma (Turma t){
+<b class="nc">&nbsp;        this(t.getAlunos());</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setAlunos(List&lt;Aluno&gt; novosAlunos){
+<b class="nc">&nbsp;        alunos = novosAlunos.stream().map(Aluno::clone).collect(Collectors.toList());</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public List&lt;Aluno&gt; getAlunos(){
+<b class="nc">&nbsp;        return alunos.stream().map(Aluno::clone).collect(Collectors.toList());</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void addAluno(Aluno a) throws NotaInvalidaException{
+<b class="pc">&nbsp;        if (!alunos.contains(a)) alunos.add(a.clone());</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public boolean containsAluno(String numero) {
+<b class="pc">&nbsp;        return alunos.stream().filter(x -&gt; x.getNumero().equals(numero)).count() &gt; 0;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void removeAluno(String numero) throws AlunoInexistenteException{
+<b class="nc">&nbsp;        Iterator&lt;Aluno&gt; it = alunos.iterator();</b>
+<b class="nc">&nbsp;        boolean removido = false;</b>
+<b class="nc">&nbsp;        while (it.hasNext() &amp;&amp; !removido){</b>
+<b class="nc">&nbsp;            Aluno aluno = it.next();</b>
+<b class="nc">&nbsp;            if (it.next().getNumero().equals(numero)){</b>
+<b class="nc">&nbsp;                it.remove();</b>
+<b class="nc">&nbsp;                removido = true;</b>
+&nbsp;            }
+&nbsp;        }
+<b class="nc">&nbsp;        if (!removido) throw new AlunoInexistenteException();</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public Aluno getAluno(String numero) throws AlunoInexistenteException {
+<b class="fc">&nbsp;        return alunos.stream()</b>
+<b class="fc">&nbsp;                .filter(x -&gt; x.getId().equals(numero))</b>
+<b class="fc">&nbsp;                .findFirst()</b>
+<b class="fc">&nbsp;                .orElseThrow(() -&gt; new AlunoInexistenteException())</b>
+<b class="fc">&nbsp;                .clone();</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public double media(){
+<b class="fc">&nbsp;        double media = 0.0;</b>
+<b class="fc">&nbsp;        for (Aluno a : alunos){</b>
+<b class="fc">&nbsp;            media += a.media();</b>
+&nbsp;        }
+<b class="fc">&nbsp;        return media/alunos.size();</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public List&lt;Aluno&gt; reprovados(){
+<b class="nc">&nbsp;        List&lt;Aluno&gt; r = new ArrayList&lt;&gt;();</b>
+<b class="nc">&nbsp;        for (Aluno a : alunos) {</b>
+<b class="nc">&nbsp;            if (a.media() &lt; 10) alunos.add(a.clone());</b>
+&nbsp;        }
+<b class="nc">&nbsp;        return r;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;}
+&nbsp;
+&nbsp;
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2025-02-13 10:33</div>
+</div>
+</body>
+</html>

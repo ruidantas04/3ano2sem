@@ -1,0 +1,4 @@
+2.a
+Apartir do data Explorer, consigo analisar e afimar que no ano o valor é sempre 2013.Os que repetem tambem é o arrive delay e o departure delay.
+
+2.b

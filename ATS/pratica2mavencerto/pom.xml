@@ -1,0 +1,36 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>Turma</groupId>
+  <artifactId>Turma</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.pitest</groupId>
+        <artifactId>pitest-maven</artifactId>
+        <version>1.7.2</version> <!-- Use a versão mais recente disponível -->
+        <configuration>
+          <targetClasses>
+            <param>pratica2mavencerto/src/src</param> <!-- Altere para o pacote do seu código -->
+          </targetClasses>
+          <targetTests>
+            <param>pratica2mavencerto/src/tests</param> <!-- Altere para o pacote dos testes -->
+          </targetTests>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>mutationCoverage</goal> <!-- Goal para rodar os testes de mutação -->
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

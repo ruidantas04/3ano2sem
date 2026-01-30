@@ -1,0 +1,307 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> expressao
+Rule 1     expressao -> NEG expressao
+Rule 2     expressao -> expressao CON expressao
+Rule 3     expressao -> expressao DIS expressao
+Rule 4     expressao -> expressao IMP expressao
+Rule 5     expressao -> expressao EQUIV expressao
+Rule 6     expressao -> LPAREN expressao RPAREN
+Rule 7     expressao -> PROP
+
+Terminals, with rules where they appear
+
+CON                  : 2
+DIS                  : 3
+EQUIV                : 5
+IMP                  : 4
+LPAREN               : 6
+NEG                  : 1
+PROP                 : 7
+RPAREN               : 6
+error                : 
+
+Nonterminals, with rules where they appear
+
+expressao            : 1 2 2 3 3 4 4 5 5 6 0
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . expressao
+    (1) expressao -> . NEG expressao
+    (2) expressao -> . expressao CON expressao
+    (3) expressao -> . expressao DIS expressao
+    (4) expressao -> . expressao IMP expressao
+    (5) expressao -> . expressao EQUIV expressao
+    (6) expressao -> . LPAREN expressao RPAREN
+    (7) expressao -> . PROP
+
+    NEG             shift and go to state 2
+    LPAREN          shift and go to state 3
+    PROP            shift and go to state 4
+
+    expressao                      shift and go to state 1
+
+state 1
+
+    (0) S' -> expressao .
+    (2) expressao -> expressao . CON expressao
+    (3) expressao -> expressao . DIS expressao
+    (4) expressao -> expressao . IMP expressao
+    (5) expressao -> expressao . EQUIV expressao
+
+    CON             shift and go to state 5
+    DIS             shift and go to state 6
+    IMP             shift and go to state 7
+    EQUIV           shift and go to state 8
+
+
+state 2
+
+    (1) expressao -> NEG . expressao
+    (1) expressao -> . NEG expressao
+    (2) expressao -> . expressao CON expressao
+    (3) expressao -> . expressao DIS expressao
+    (4) expressao -> . expressao IMP expressao
+    (5) expressao -> . expressao EQUIV expressao
+    (6) expressao -> . LPAREN expressao RPAREN
+    (7) expressao -> . PROP
+
+    NEG             shift and go to state 2
+    LPAREN          shift and go to state 3
+    PROP            shift and go to state 4
+
+    expressao                      shift and go to state 9
+
+state 3
+
+    (6) expressao -> LPAREN . expressao RPAREN
+    (1) expressao -> . NEG expressao
+    (2) expressao -> . expressao CON expressao
+    (3) expressao -> . expressao DIS expressao
+    (4) expressao -> . expressao IMP expressao
+    (5) expressao -> . expressao EQUIV expressao
+    (6) expressao -> . LPAREN expressao RPAREN
+    (7) expressao -> . PROP
+
+    NEG             shift and go to state 2
+    LPAREN          shift and go to state 3
+    PROP            shift and go to state 4
+
+    expressao                      shift and go to state 10
+
+state 4
+
+    (7) expressao -> PROP .
+
+    CON             reduce using rule 7 (expressao -> PROP .)
+    DIS             reduce using rule 7 (expressao -> PROP .)
+    IMP             reduce using rule 7 (expressao -> PROP .)
+    EQUIV           reduce using rule 7 (expressao -> PROP .)
+    $end            reduce using rule 7 (expressao -> PROP .)
+    RPAREN          reduce using rule 7 (expressao -> PROP .)
+
+
+state 5
+
+    (2) expressao -> expressao CON . expressao
+    (1) expressao -> . NEG expressao
+    (2) expressao -> . expressao CON expressao
+    (3) expressao -> . expressao DIS expressao
+    (4) expressao -> . expressao IMP expressao
+    (5) expressao -> . expressao EQUIV expressao
+    (6) expressao -> . LPAREN expressao RPAREN
+    (7) expressao -> . PROP
+
+    NEG             shift and go to state 2
+    LPAREN          shift and go to state 3
+    PROP            shift and go to state 4
+
+    expressao                      shift and go to state 11
+
+state 6
+
+    (3) expressao -> expressao DIS . expressao
+    (1) expressao -> . NEG expressao
+    (2) expressao -> . expressao CON expressao
+    (3) expressao -> . expressao DIS expressao
+    (4) expressao -> . expressao IMP expressao
+    (5) expressao -> . expressao EQUIV expressao
+    (6) expressao -> . LPAREN expressao RPAREN
+    (7) expressao -> . PROP
+
+    NEG             shift and go to state 2
+    LPAREN          shift and go to state 3
+    PROP            shift and go to state 4
+
+    expressao                      shift and go to state 12
+
+state 7
+
+    (4) expressao -> expressao IMP . expressao
+    (1) expressao -> . NEG expressao
+    (2) expressao -> . expressao CON expressao
+    (3) expressao -> . expressao DIS expressao
+    (4) expressao -> . expressao IMP expressao
+    (5) expressao -> . expressao EQUIV expressao
+    (6) expressao -> . LPAREN expressao RPAREN
+    (7) expressao -> . PROP
+
+    NEG             shift and go to state 2
+    LPAREN          shift and go to state 3
+    PROP            shift and go to state 4
+
+    expressao                      shift and go to state 13
+
+state 8
+
+    (5) expressao -> expressao EQUIV . expressao
+    (1) expressao -> . NEG expressao
+    (2) expressao -> . expressao CON expressao
+    (3) expressao -> . expressao DIS expressao
+    (4) expressao -> . expressao IMP expressao
+    (5) expressao -> . expressao EQUIV expressao
+    (6) expressao -> . LPAREN expressao RPAREN
+    (7) expressao -> . PROP
+
+    NEG             shift and go to state 2
+    LPAREN          shift and go to state 3
+    PROP            shift and go to state 4
+
+    expressao                      shift and go to state 14
+
+state 9
+
+    (1) expressao -> NEG expressao .
+    (2) expressao -> expressao . CON expressao
+    (3) expressao -> expressao . DIS expressao
+    (4) expressao -> expressao . IMP expressao
+    (5) expressao -> expressao . EQUIV expressao
+
+    $end            reduce using rule 1 (expressao -> NEG expressao .)
+    RPAREN          reduce using rule 1 (expressao -> NEG expressao .)
+    CON             shift and go to state 5
+    DIS             shift and go to state 6
+    IMP             shift and go to state 7
+    EQUIV           shift and go to state 8
+
+  ! CON             [ reduce using rule 1 (expressao -> NEG expressao .) ]
+  ! DIS             [ reduce using rule 1 (expressao -> NEG expressao .) ]
+  ! IMP             [ reduce using rule 1 (expressao -> NEG expressao .) ]
+  ! EQUIV           [ reduce using rule 1 (expressao -> NEG expressao .) ]
+
+
+state 10
+
+    (6) expressao -> LPAREN expressao . RPAREN
+    (2) expressao -> expressao . CON expressao
+    (3) expressao -> expressao . DIS expressao
+    (4) expressao -> expressao . IMP expressao
+    (5) expressao -> expressao . EQUIV expressao
+
+    RPAREN          shift and go to state 15
+    CON             shift and go to state 5
+    DIS             shift and go to state 6
+    IMP             shift and go to state 7
+    EQUIV           shift and go to state 8
+
+
+state 11
+
+    (2) expressao -> expressao CON expressao .
+    (2) expressao -> expressao . CON expressao
+    (3) expressao -> expressao . DIS expressao
+    (4) expressao -> expressao . IMP expressao
+    (5) expressao -> expressao . EQUIV expressao
+
+    CON             reduce using rule 2 (expressao -> expressao CON expressao .)
+    $end            reduce using rule 2 (expressao -> expressao CON expressao .)
+    RPAREN          reduce using rule 2 (expressao -> expressao CON expressao .)
+    DIS             shift and go to state 6
+    IMP             shift and go to state 7
+    EQUIV           shift and go to state 8
+
+  ! DIS             [ reduce using rule 2 (expressao -> expressao CON expressao .) ]
+  ! IMP             [ reduce using rule 2 (expressao -> expressao CON expressao .) ]
+  ! EQUIV           [ reduce using rule 2 (expressao -> expressao CON expressao .) ]
+  ! CON             [ shift and go to state 5 ]
+
+
+state 12
+
+    (3) expressao -> expressao DIS expressao .
+    (2) expressao -> expressao . CON expressao
+    (3) expressao -> expressao . DIS expressao
+    (4) expressao -> expressao . IMP expressao
+    (5) expressao -> expressao . EQUIV expressao
+
+    CON             reduce using rule 3 (expressao -> expressao DIS expressao .)
+    DIS             reduce using rule 3 (expressao -> expressao DIS expressao .)
+    $end            reduce using rule 3 (expressao -> expressao DIS expressao .)
+    RPAREN          reduce using rule 3 (expressao -> expressao DIS expressao .)
+    IMP             shift and go to state 7
+    EQUIV           shift and go to state 8
+
+  ! IMP             [ reduce using rule 3 (expressao -> expressao DIS expressao .) ]
+  ! EQUIV           [ reduce using rule 3 (expressao -> expressao DIS expressao .) ]
+  ! CON             [ shift and go to state 5 ]
+  ! DIS             [ shift and go to state 6 ]
+
+
+state 13
+
+    (4) expressao -> expressao IMP expressao .
+    (2) expressao -> expressao . CON expressao
+    (3) expressao -> expressao . DIS expressao
+    (4) expressao -> expressao . IMP expressao
+    (5) expressao -> expressao . EQUIV expressao
+
+    CON             reduce using rule 4 (expressao -> expressao IMP expressao .)
+    DIS             reduce using rule 4 (expressao -> expressao IMP expressao .)
+    IMP             reduce using rule 4 (expressao -> expressao IMP expressao .)
+    $end            reduce using rule 4 (expressao -> expressao IMP expressao .)
+    RPAREN          reduce using rule 4 (expressao -> expressao IMP expressao .)
+    EQUIV           shift and go to state 8
+
+  ! EQUIV           [ reduce using rule 4 (expressao -> expressao IMP expressao .) ]
+  ! CON             [ shift and go to state 5 ]
+  ! DIS             [ shift and go to state 6 ]
+  ! IMP             [ shift and go to state 7 ]
+
+
+state 14
+
+    (5) expressao -> expressao EQUIV expressao .
+    (2) expressao -> expressao . CON expressao
+    (3) expressao -> expressao . DIS expressao
+    (4) expressao -> expressao . IMP expressao
+    (5) expressao -> expressao . EQUIV expressao
+
+    CON             reduce using rule 5 (expressao -> expressao EQUIV expressao .)
+    DIS             reduce using rule 5 (expressao -> expressao EQUIV expressao .)
+    IMP             reduce using rule 5 (expressao -> expressao EQUIV expressao .)
+    EQUIV           reduce using rule 5 (expressao -> expressao EQUIV expressao .)
+    $end            reduce using rule 5 (expressao -> expressao EQUIV expressao .)
+    RPAREN          reduce using rule 5 (expressao -> expressao EQUIV expressao .)
+
+  ! CON             [ shift and go to state 5 ]
+  ! DIS             [ shift and go to state 6 ]
+  ! IMP             [ shift and go to state 7 ]
+  ! EQUIV           [ shift and go to state 8 ]
+
+
+state 15
+
+    (6) expressao -> LPAREN expressao RPAREN .
+
+    CON             reduce using rule 6 (expressao -> LPAREN expressao RPAREN .)
+    DIS             reduce using rule 6 (expressao -> LPAREN expressao RPAREN .)
+    IMP             reduce using rule 6 (expressao -> LPAREN expressao RPAREN .)
+    EQUIV           reduce using rule 6 (expressao -> LPAREN expressao RPAREN .)
+    $end            reduce using rule 6 (expressao -> LPAREN expressao RPAREN .)
+    RPAREN          reduce using rule 6 (expressao -> LPAREN expressao RPAREN .)
+

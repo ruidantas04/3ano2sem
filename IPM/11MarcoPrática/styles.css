@@ -1,0 +1,176 @@
+:root {
+  --background-color: #ECEEEC;
+  --accent-color: #7DF6B4;
+  --accent-color-dark: #77d5a1;
+  --light-color: #FFF;
+  --dark-color: #000;
+  --text-secondary-color: #3F3F3F;
+  --border-color: #4D4D4D;
+  --yellow-color: #FFD700;
+}
+
+html, body {
+  margin: 0;
+  font-family: 'Anek Latin';
+}
+
+.card {
+  padding: 20px;
+  background-color: var(--light-color);
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+#app{
+  display: grid;
+  background-color: var(--background-color);
+  grid-template-areas: 
+  "nav nav  nav        nav"
+  ".   main categories ."
+  ".   main gallery    ."
+  ".   main .          ."
+  "footer footer footer footer";
+  grid-template-rows: 50px auto auto 1fr 100px;
+  grid-template-columns: 1fr 3fr 2fr 1fr;
+  gap:20px;
+}
+
+#footer{
+  grid-area:footer;
+}
+
+#main{
+  grid-area:main;
+}
+
+.side{
+  grid-area:categories;
+}
+
+.section{
+  grid-area:gallery;
+}
+
+#nav{
+  grid-area:nav;
+}
+#footer{
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.categories-list{
+  padding: 0px;
+  list-style: none;
+  gap: 0px;
+  justify-content: center;
+  align-items: center;
+}
+.categories-list li{
+  padding: 0.5rem 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+.categories-list li:hover{
+  background-color: var(--dark-color); /* Altera a cor de fundo ao passar o mouse */
+  color: var(--yellow-color); 
+}
+.article {
+  margin-bottom: 20px;
+}
+
+.author, .date {
+  margin: 0; /* Remove as margens */
+  color: var(--text-secondary-color); /* Aplica a cor correta */
+}
+.article-categories {
+  display: flex; /* Faz com que os itens fiquem em linha */
+  flex-wrap: wrap; /* Permite quebra de linha se necessário */
+  gap: 10px; /* Espaçamento entre os itens */
+  margin-top: 10px; /* Margem no topo */
+  padding: 0;
+  list-style: none; /* Remove os marcadores de lista */
+  cursor: pointer;
+}
+
+.article-categories li {
+  padding: 0.5rem 1.5rem; /* Padding vertical e horizontal */
+  margin-right: 20px; /* Margem à direita */
+  border: 1px solid var(--border-color); /* Borda com a cor definida */
+  border-radius: 10px; /* Raio da borda */
+  background-color: var(--background-color); /* Fundo com a variável correta */
+  transition: background-color 0.3s ease-in-out;
+}
+.article-categories li:hover {
+  background-color: var(--dark-color); /* Altera a cor de fundo ao passar o mouse */
+  color: var(--yellow-color); /* Altera a cor do texto ao passar o mouse */
+}
+#nav {
+  display: flex; /* Ativa o Flexbox */
+  justify-content: space-between; /* Espaço entre logo e menu */
+  align-items: center; /* Centraliza os itens verticalmente */
+  padding: 1rem;
+  background-color: var(--light-color); /* Cor de fundo */
+}
+
+.logo {
+  width: 50px; /* Redimensiona a logo */
+  height: auto; /* Mantém a proporção */
+}
+
+.nav-menu {
+  display: flex; /* Deixa os itens na mesma linha */
+  list-style: none; /* Remove os marcadores de lista */
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  margin-right: 20px; /* Espaçamento entre os botões */
+}
+
+.nav-menu li:last-child {
+  margin-right: 0; /* Remove a margem do último botão */
+}
+
+.nav-menu a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 1rem;
+  background-color: transparent;
+  color: var(--dark-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 5px; /* Suaviza as bordas */
+}
+
+/* Hover normal */
+.nav-menu a:hover {
+  background-color: var(--dark-color); /* Altera a cor de fundo ao passar o mouse */
+  color: var(--yellow-color); 
+}
+
+/* Botão "Sign Up" */
+.nav-menu .signup-btn {
+  background-color: var(--yellow-color) ; /* Garante a cor de fundo */
+  color: var(--dark-color) ; /* Garante a cor do texto */
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 1rem;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Hover no botão "Sign Up" */
+.nav-menu .signup-btn:hover {
+  background-color: var(--dark-color) ; /* Altera a cor de fundo ao passar o mouse */
+  color: var(--yellow-color) ; /* Altera a cor do texto ao passar o mouse */
+}
+

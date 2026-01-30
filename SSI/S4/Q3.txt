@@ -1,0 +1,3 @@
+1️⃣ AES-CTR: O AES no modo CTR é vulnerável ao mesmo tipo de ataque que o ChaCha20, pois ambos são cifras de fluxo. Isso permite que, se um atacante souber parte do texto-limpo, ele possa modificar o criptograma sem corromper o restante do conteúdo. Assim, o chacha20_int_attck.py funcionaria também para AES-CTR, pois ambos os modos não garantem integridade.
+
+2️⃣ AES-CBC: O modo CBC é mais resistente a ataques, pois qualquer modificação no criptograma corrompe o bloco alterado e afeta parcialmente o próximo. Isso torna mais difícil para um atacante modificar o conteúdo sem que a alteração seja detectada ou cause danos no texto-limpo, tornando o ataque implementado no chacha20_int_attck.py ineficaz em AES-CBC.

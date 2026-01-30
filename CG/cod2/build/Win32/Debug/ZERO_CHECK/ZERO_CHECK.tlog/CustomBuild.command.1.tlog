@@ -1,0 +1,10 @@
+^C:\USERS\UTILIZADOR\DESKTOP\3ANO2SEM\CG\COD2\BUILD\CMAKEFILES\3CE8481E0164AFA24A06BA146E0FEA62\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\bin\cmake.exe" -SC:/Users/Utilizador/Desktop/3ano2sem/CG/cod2 -BC:/Users/Utilizador/Desktop/3ano2sem/CG/cod2/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Utilizador/Desktop/3ano2sem/CG/cod2/build/class2.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

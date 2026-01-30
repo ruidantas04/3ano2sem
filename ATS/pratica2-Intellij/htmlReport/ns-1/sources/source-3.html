@@ -1,0 +1,143 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > AlunoTest</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">&lt;empty package name&gt;</a>
+</div>
+
+<h1>Coverage Summary for Class: AlunoTest (&lt;empty package name&gt;)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">AlunoTest</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/10)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;import org.junit.jupiter.api.BeforeEach;
+&nbsp;import org.junit.jupiter.api.Test;
+&nbsp;
+&nbsp;import static org.junit.jupiter.api.Assertions.*;
+&nbsp;
+<b class="nc">&nbsp;class AlunoTest {</b>
+&nbsp;
+&nbsp;    Aluno a;
+&nbsp;
+&nbsp;    @BeforeEach
+&nbsp;    public void setup(){
+<b class="nc">&nbsp;        a = new Aluno();</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    void setNomeTest() {
+<b class="nc">&nbsp;        a.setNome(&quot;Miguel&quot;);</b>
+<b class="nc">&nbsp;        assertEquals(&quot;Miguel&quot;, a.getNome(), &quot;Nome do aluno incorreto&quot;);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    void setNotaTest() {
+<b class="nc">&nbsp;        assertThrows(NotaInvalidaException.class, () -&gt;  a.setNota(&quot;ATS&quot;, 49), &quot;Nota inválida aceite&quot;);</b>
+<b class="nc">&nbsp;        assertThrows(NotaInvalidaException.class, () -&gt;  a.setNota(&quot;ATS&quot;, -620), &quot;Nota inválida aceite&quot;);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Test
+&nbsp;    void incrementaNotaTest() {
+&nbsp;        try {
+<b class="nc">&nbsp;            a.setNota(&quot;ATS&quot;, 10);</b>
+<b class="nc">&nbsp;            a.incrementaNota(&quot;ATS&quot;, 5);</b>
+<b class="nc">&nbsp;            assertEquals(15, a.getNota(&quot;ATS&quot;), 0.05, &quot;Nota inválida após incremento&quot;);</b>
+&nbsp;        }
+&nbsp;        catch (NotaInvalidaException e){
+<b class="nc">&nbsp;            fail (&quot;NotaInvalidaException no teste incrementaNotaTest&quot;);</b>
+&nbsp;        }
+&nbsp;
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2025-02-13 10:35</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- Este documento apresenta uma solução em construção. É fornecido -->
+<!-- como material de estudo. Recomenda-se que o revejam e melhorem -->
+<!-- conforme forem adquirindo novos conhecimentos. -->
+<!-- Traffic lights v.2025 -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Semaforo</title>
+    <link rel="stylesheet" href="semaforo.css" type="text/css">
+    <script src ="https://unpkg.com/vue@latest" defer></script>
+    <script src="semaforo.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Semáforo</h1>
+      <main>
+        <div id="red" class="lampada" v-bind:class="{'vermelhoon' : redOn}"></div>
+        <div id="yellow" class="lampada" v-bind:class="{'amareloon' : yellowOn}"></div>
+        <div id="green" class="lampada" v-bind:class="{'verdeon' : greenOn}"></div>
+        <div id="botoes">
+          <button id="auto" @click="toggleAuto">Modo Auto: {{strAuto}}</button>
+          <button id="mudar" @click="stepLights">Mudar</button>
+        </div>
+      </main>
+  </div>
+  </body>
+</html>

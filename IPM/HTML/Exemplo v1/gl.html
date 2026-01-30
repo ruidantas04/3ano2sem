@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Game Library</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="https://unpkg.com/vue@3" defer></script>
+        <script src="gl.js" defer></script>
+    </head>
+    <body>
+       <div class="grid-container" id="app">
+        <header>
+            <h1>{{ appTitle }}</h1>
+        </header>
+        <nav>
+            <p>{{ userName }}</p>
+            <ul id="menu">
+                <li><a href="all.html">All Games</a></li>
+                <li><a href="mine.html">My Games</a></li>
+                <li><a href="add.html">Add Game</a></li>
+            </ul>
+        </nav> 
+        <main>
+            <table>
+                <tr>
+                    <th>Game</th>
+                    <th>Year</th>
+                    <th>Platform</th>
+                    <th>Actions</th>
+                </tr>
+                <tr v-for="game in filteredGames" :key="game.name">
+                    <td>{{ game.name }}</td>
+                    <td>{{ game.year }}</td>
+                    <td>{{ game.platform }}</td>
+                    <td><button type="button" @click="removeGames(game.id)">Remove</button></td>
+                </tr>   
+            </table>
+        </main>
+        <aside>
+            <p>Filter</p>
+            <form>
+                <select v-model="selectedYear">
+                    <option value="">Year...</option>
+                    <option v-for="year in years" :key="year" :value="year">{{ year }}</option>
+                </select>
+                <select v-model="selectedPlatform">
+                    <option value="">Platform...</option>
+                    <option v-for="platform in platforms" :key="platform" :value="platform">{{ platform }}</option>
+                </select>
+            </form>
+            <form @submit.prevent="addGame">
+                <fieldset id="addGame">
+                    <legend>AddGame</legend>
+                    <label for ="name">Name:</label>
+                    <input type="text" id="name" v-model="newGame.name">
+                    <label for="year">Year:</label>
+                    <input type="text" id="year" v-model="newGame.year">
+                    <label for="platform">Platform:</label>
+                    <input type="text" id="platform" v-model="newGame.platform">
+                    <button type="button" @click="addGame"
+                            :disabled="FormFilled">Add Game</button>
+                    <button type="button" @click="loadData">Load Data</button>
+                </fieldset>
+            </form>
+        </aside>
+        <footer>
+            <p>Games Library &copy; 2025</p>
+        </footer>
+        </div>
+    </body>
+</html>

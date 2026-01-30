@@ -1,0 +1,5 @@
+O ataque realizado não contradiz a segurança absoluta do One-Time Pad (OTP), pois a segurança perfeita
+do OTP só é garantida se a chave for verdadeiramente aleatória, do mesmo tamanho da mensagem e usada apenas
+uma vez. O problema em bad_otp.py é que a chave não é verdadeiramente aleatória, mas previsível, devido ao
+gerador inseguro. Isso permite ataques de força bruta e análise estatística para recuperar o texto original.
+Portanto, a vulnerabilidade não está no OTP em si, mas na má implementação do gerador de chaves.
