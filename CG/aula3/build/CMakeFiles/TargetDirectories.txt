@@ -1,3 +1,0 @@
-C:/Users/Utilizador/Desktop/3ano2sem/CG/aula3/build/CMakeFiles/class3.dir
-C:/Users/Utilizador/Desktop/3ano2sem/CG/aula3/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/Utilizador/Desktop/3ano2sem/CG/aula3/build/CMakeFiles/ZERO_CHECK.dir

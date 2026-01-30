@@ -1,3 +1,0 @@
-C:/Users/Utilizador/Desktop/3ano2sem/CG/aula11-texturecylinder/build/CMakeFiles/class11.dir
-C:/Users/Utilizador/Desktop/3ano2sem/CG/aula11-texturecylinder/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/Utilizador/Desktop/3ano2sem/CG/aula11-texturecylinder/build/CMakeFiles/ZERO_CHECK.dir

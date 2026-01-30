@@ -1,0 +1,41 @@
+# Vídeos
+*.mp4
+*.avi
+*.mov
+
+# Builds e binários
+build/
+bin/
+Debug/
+Release/
+*.exe
+*.dll
+*.obj
+*.o
+*.pdb
+*.ilk
+*.suo
+*.db
+*.ipch
+
+# Node modules
+node_modules/
+package-lock.json
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vs/
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Temporários
+*.tmp
+*.temp
+*.cache
